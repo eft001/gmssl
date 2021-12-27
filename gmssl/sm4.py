@@ -164,4 +164,4 @@ class CryptSM4(object):
                 iv = copy.deepcopy(input_data[i:i + 16])
                 i += 16
                 length -= 16
-            return list_to_bytes(unpadding(output_data))
+            return list_to_bytes(output_data)
